@@ -254,7 +254,10 @@
     }
     &__wrapper{
         display: grid;
-        grid-template: repeat(3, 180px) / repeat(auto-fill, minmax(600px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-rows: repeat(2, minmax(180px, 1fr));
+        grid-auto-rows: 180px;
+        justify-content: center;
         gap: 25px;
         margin-top: 30px;
         &__item{
@@ -266,7 +269,7 @@
             align-items: center;
             &_number{
                 background: linear-gradient(137deg, rgba(173, 0, 255, 0.50) 0%, #AD00FF 100%);
-                width: 130px;
+                padding: 0 40px;
                 height: 100%;                
                 display: flex;
                 justify-content: center;
@@ -300,7 +303,8 @@
         margin-top: 50px;
         display: grid;
         grid-template: repeat(1, 180px) / repeat(auto-fill, minmax(600px, 1fr));
-        column-gap: 25px;
+        grid-auto-rows: 180px;
+        gap: 25px;
         &__item{
             border: 1px solid #6E7191;
             padding: 0 50px;
@@ -470,7 +474,7 @@
                 color: #6E7191;
                 font-size: 16px;
                 text-decoration: none;
-                margin-top: 5px;
+                margin-top: 8px;
                 &:hover{
                     text-decoration: underline;
                 }
@@ -522,7 +526,7 @@
                 color: #6E7191;
                 font-size: 16px;
                 text-decoration: none;
-                margin-top: 5px;
+                margin-top: 8px;
                 &:hover{
                     text-decoration: underline;
                 }
