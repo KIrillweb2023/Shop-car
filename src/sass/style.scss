@@ -1,0 +1,37 @@
+@import './libs/fonts';
+@import './blocks/basket-page';
+@import './blocks/catalog-page';
+@import './blocks/contacts-page';
+@import './blocks/doc-page';
+@import './blocks/login-doc-page';
+@import './blocks/login-page';
+@import './blocks/main';
+@import './blocks/personal-page';
+@import './blocks/questions-page';
+@import './blocks/specifications-page';
+@import './blocks/staff-page';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+}
+
+.container {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+input, button{
+    outline: none;
+    border: none;
+}
+
+
+
+
+@import './variables/colors';
