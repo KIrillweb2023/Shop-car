@@ -1,3 +1,4 @@
+@import './variables/colors';
 @import './libs/fonts';
 @import './blocks/basket-page';
 @import './blocks/catalog-page';
@@ -9,7 +10,6 @@
 @import './blocks/personal-page';
 @import './blocks/questions-page';
 @import './blocks/specifications-page';
-
 @import './blocks/staff-page';
 
 
@@ -31,8 +31,11 @@ input, button{
     outline: none;
     border: none;
 }
+button{
+    cursor: pointer;
+}
 
 
 
 
-@import './variables/colors';
+

@@ -1,6 +1,6 @@
 .header{
     padding: 8px 0;
-    background-color: #fff;
+    background-color: $white-g;
     height: 70px;
     &__wrapper{
         display: flex;
@@ -8,14 +8,14 @@
         justify-content: space-between;
         &__list{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             list-style-type: none;
             width: 40%;
             &_item{
                 &-link{
                     text-decoration: none;
                     font-size: 16px;
-                    color: #6E7191;
+                    color: $text-grey;
                     font-weight: 600;
                     &:hover{
                         text-decoration: underline;
@@ -29,7 +29,7 @@
             column-gap: 10px;
             text-decoration: none;
             &_descr{
-                color: #AD00FF;
+                color: $color-Violet;
                 font-size: 24px;
                 text-decoration: none;
                 font-weight: 700;
@@ -44,7 +44,7 @@
             display: flex;
             column-gap: 15px;
             align-items: center;
-            background: #AD00FF;
+            background: $color-Violet;
             padding: 12px 25px;
             
             border-radius: 10px;
@@ -123,7 +123,7 @@
             .active{
                 width: 35px;
                 height: 11px;
-                background-color: #AD00FF;
+                background-color: $color-Violet;
             }
         }
     }
@@ -147,7 +147,7 @@
                 display: flex;
                 column-gap: 10px;
                 justify-content: space-between;
-                background-color: #AD00FF;
+                background-color: $color-Violet;
                 border-radius: 10px;
                 padding: 10px 20px;
                 text-decoration: none;
@@ -244,9 +244,9 @@
     }
 }
 .stage{
-    min-height: 800px;
+    min-height: 400px;
     background-color: #fff;
-    padding: 50px 0;
+    padding: 30px 0;
     &__title{
         font-weight: 700;
         color: #4E4B66;
@@ -259,7 +259,7 @@
         grid-auto-rows: 150px;
         justify-content: center;
         gap: 25px;
-        margin-top: 30px;
+        margin-top: 50px;
         &__item{
             display: flex;
             padding: 20px;
@@ -350,7 +350,7 @@
         &__text{
             font-size: 18px;
             color: #6E7191;
-            font-weight: 600;  
+            font-weight: 500;  
         }
         &__blur{
             position: absolute;
@@ -396,10 +396,11 @@
         &__form{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-top: 50px;
             &_input{
                 position: relative;
-                width: 300px;
+                width: 23%;
                 &-label{
                     position: absolute;
                     top: -23px;
@@ -417,10 +418,10 @@
                 }
             }
             &_btn{
-                width: 350px;
+                width: 25%;
                 height: 40px;
                 border-radius: 10px;
-                background-color: #AD00FF;
+                background-color: $color-Violet;
                 color: #FFF;
                 font-weight: 700;
                 font-size: 16px;
@@ -444,7 +445,7 @@
                 align-items: center;
                 column-gap: 10px;
                 text-decoration: none;
-                color: #AD00FF;
+                color: $color-Violet;
                 &-text{
                     font-size: 24px;
                     font-weight: 700;
