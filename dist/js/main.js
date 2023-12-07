@@ -31,5 +31,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     });
   }
 
-  userNow(regBtn, logbtn, modalReg, modalLog);
+  if(regBtn){
+    userNow(regBtn, logbtn, modalReg, modalLog);
+  }
 });
